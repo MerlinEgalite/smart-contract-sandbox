@@ -34,7 +34,7 @@ export default function Hints(props) {
         <span style={{ marginRight: 8 }}>🎛</span>
         Edit your <b>frontend</b> in
         <span style={{ marginLeft: 4, backgroundColor: "#f9f9f9", padding: 4, borderRadius: 4, fontWeight: "bolder" }}>
-          packages/reactapp/src/App.js
+          packages/reactapp/src/App.jsx
         </span>
       </div>
 
