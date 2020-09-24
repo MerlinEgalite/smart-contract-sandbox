@@ -36,15 +36,20 @@ function App() {
         <TokenBalance name={"Balloons"} img={"🎈"} address={address} contracts={readContracts} />
       </div>
 
-      <Contract
-        name={"DEX"}
-        provider={injectedProvider}
+      <DEX
         address={address}
+        injectedProvider={injectedProvider}
+        localProvider={localProvider}
+        mainnetProvider={mainnetProvider}
+        readContracts={readContracts}
+        price={price}
       />
 
       <Contract
+        title={"🎈 Balloons"}
         name={"Balloons"}
-        provider={injectedProvider}
+        show={["balanceOf","approve"]}
+        provider={localProvider}
         address={address}
       />
 
